@@ -3,36 +3,48 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- ===== EDIT THESE 3 LINES ===== -->
   <title>Book Your Lashes ✨</title>
   <meta name="description" content="Lash appointments with pbabylash. Tap to book.">
-  <meta http-equiv="refresh" content="0; url=https://app.acuityscheduling.com/schedule/139f20ea/?calendarIds=14683671">
-  <!-- ============================== -->
+
+  <!-- Icons: browser tab + iPhone (iMessage card, Home Screen) -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
   <!-- Link preview (iMessage, Instagram, Facebook, WhatsApp, etc.) -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Book Your Lashes ✨">
   <meta property="og:description" content="Lash appointments with pbabylash. Tap to book.">
-  <meta property="og:image" content="https://USERNAME.github.io/preview.jpg">
-  <meta property="og:url" content="https://USERNAME.github.io/">
+  <meta property="og:image" content="https://pbabylash.github.io/preview.jpg">
+  <meta property="og:image:secure_url" content="https://pbabylash.github.io/preview.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:url" content="https://pbabylash.github.io/">
 
   <!-- X / Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Book Your Lashes ✨">
-  <meta name="twitter:image" content="https://USERNAME.github.io/preview.jpg">
+  <meta name="twitter:image" content="https://pbabylash.github.io/preview.jpg">
 
   <script>
-    // Instant redirect for real visitors (link-preview bots don't run this)
-    window.location.replace("https://app.acuityscheduling.com/schedule/139f20ea/?calendarIds=14683671");
+    // Redirect real visitors only. Link-preview bots (iMessage, Facebook,
+    // Instagram, X, WhatsApp, Discord, Slack...) stay on this page so they
+    // read the preview tags above instead of Acuity's.
+    var BOOKING = "https://app.acuityscheduling.com/schedule/139f20ea/?calendarIds=14683671";
+    var bot = /facebookexternalhit|facebot|twitterbot|whatsapp|discordbot|slackbot|telegrambot|linkedinbot|pinterest|googlebot|bingbot|applebot|embedly|skypeuripreview/i;
+    if (!bot.test(navigator.userAgent)) {
+      window.location.replace(BOOKING);
+    }
   </script>
   <style>
     body { font-family: system-ui, sans-serif; display: grid; place-items: center;
-           min-height: 100vh; margin: 0; background: #fff7f9; color: #333; }
-    a { color: #c2185b; font-weight: 600; }
+           min-height: 100vh; margin: 0; background: #fff7f9; color: #333; text-align: center; }
+    a { display: inline-block; margin-top: 12px; padding: 12px 24px; border-radius: 999px;
+        background: #c2185b; color: #fff; font-weight: 600; text-decoration: none; }
   </style>
 </head>
 <body>
-  <p>Taking you to booking… <a href="https://app.acuityscheduling.com/schedule/139f20ea/?calendarIds=14683671">Tap here</a> if nothing happens.</p>
+  <div>
+    <p>Taking you to booking…</p>
+    <a href="https://app.acuityscheduling.com/schedule/139f20ea/?calendarIds=14683671">Book Your Lashes ✨</a>
+  </div>
 </body>
 </html>
